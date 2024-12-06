@@ -9,5 +9,5 @@ resources:
 - argocd-self-management.yaml
 
 patches:
-- path: argocd-cm.yaml
-- path: argocd-cmd-params-cm.yaml
+- path: argocd-cm.patch.yaml
+- path: argocd-cmd-params-cm.patch.yaml
