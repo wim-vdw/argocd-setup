@@ -1,1 +1,1 @@
-# ArgoCD installation and configuration
+# Argo CD installation and configuration
