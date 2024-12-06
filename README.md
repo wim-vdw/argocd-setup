@@ -1,2 +1,1 @@
-# argocd-setup
-ArgoCD installation and configuration
+# ArgoCD installation and configuration
