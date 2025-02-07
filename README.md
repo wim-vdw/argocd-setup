@@ -1,5 +1,8 @@
 # Argo CD installation and configuration
 
+This repository is used for bootstrapping Argo CD on a Kubernetes cluster.  
+It also enables self-management of Argo CD using Argo CD itself.
+
 ## Usage
 
 Apply the production overlay:
