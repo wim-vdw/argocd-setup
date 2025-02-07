@@ -5,6 +5,7 @@ resources:
 - ../../base
 - namespaces.yaml
 - argocd-application
+- argo-rollouts
 - projects
 
 patches:
