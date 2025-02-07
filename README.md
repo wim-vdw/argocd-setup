@@ -5,7 +5,7 @@ It also enables self-management of Argo CD using Argo CD itself.
 
 ## Usage
 
-Apply the production overlay:
+Apply the production overlay (everything will be deployed in the `argocd` namespace):
 
 ```bash
 kubectl apply -k argocd-setup/overlays/prod
