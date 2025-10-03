@@ -4,7 +4,7 @@ kind: Kustomization
 namespace: argocd
 
 resources:
-- https://raw.githubusercontent.com/argoproj/argo-cd/v3.1.7/manifests/install.yaml
+- https://raw.githubusercontent.com/argoproj/argo-cd/v3.1.8/manifests/install.yaml
 - argocd-self-management.yaml
 - argocd-server-http-ingress.yaml
 - cert-manager-issuers.yaml
