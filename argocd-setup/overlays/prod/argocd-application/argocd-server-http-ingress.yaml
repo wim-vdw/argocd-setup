@@ -29,7 +29,7 @@ kind: Ingress
 metadata:
   name: argocd-server-http-ingress-tailscale
   annotations:
-    tailscale.com/funnel: "false"
+    tailscale.com/funnel: "true"
 spec:
   ingressClassName: tailscale
   rules:
