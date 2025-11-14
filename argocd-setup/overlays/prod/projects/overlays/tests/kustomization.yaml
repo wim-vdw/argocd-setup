@@ -27,4 +27,3 @@ patches:
         - p, proj:tests:read-only, applications, get, tests/*, allow
         groups:
         - wim.vandenwyngaert@gmail.com
-        - viviane.marquebreucq@gmail.com
