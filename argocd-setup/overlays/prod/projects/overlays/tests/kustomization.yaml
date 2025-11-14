@@ -24,6 +24,6 @@ patches:
         description: Read-only role for test applications
         policies:
         - p, proj:tests:read-only, logs, get, tests/*, allow
-        - p, proj:tests:read-only, applications, get, */*, allow
+        - p, proj:tests:read-only, applications, get, tests/*, allow
         groups:
         - wim.vandenwyngaert@gmail.com
