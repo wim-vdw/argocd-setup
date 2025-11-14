@@ -2,6 +2,6 @@
 p, role:authenticated, clusters, get, *, allow
 
 # New home policy for admin
-p, role:home-admin, applications, get, argocd/*, allow
+p, role:home-admin, applications, get, default/*, allow
 
 g, wim.vandenwyngaert@gmail.com, role:home-admin
