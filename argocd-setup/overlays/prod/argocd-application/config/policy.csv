@@ -1,7 +1,16 @@
 # Default new policy with minimum set of permissions for all authenticated users
 p, role:authenticated, clusters, get, *, allow
 
-# New home policy for admin
+# New home policy for admin only in the default project
+p, role:home-admin, logs, get, default/*, allow
 p, role:home-admin, applications, get, default/*, allow
+p, role:home-admin, applications, create, default/*, allow
+p, role:home-admin, applications, update, default/*, allow
+p, role:home-admin, applications, update/*, default/*, allow
+p, role:home-admin, applications, delete, default/*, allow
+p, role:home-admin, applications, delete/*, default/*, allow
+p, role:home-admin, applications, sync, default/*, allow
+p, role:home-admin, applications, override, default/*, allow
+p, role:home-admin, applications, action/*, default/*, allow
 
 g, wim.vandenwyngaert@gmail.com, role:home-admin
