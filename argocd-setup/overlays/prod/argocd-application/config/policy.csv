@@ -1,6 +1,2 @@
-# Default policy for all authenticated users
-p, role:authenticated, repositories, get, *, allow
+# Default new policy with minimum set of permissions for all authenticated users
 p, role:authenticated, clusters, get, *, allow
-p, role:authenticated, projects, get, *, allow
-
-g, wim.vandenwyngaert@gmail.com, role:admin
