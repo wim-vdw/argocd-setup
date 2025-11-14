@@ -1,2 +1,7 @@
 # Default new policy with minimum set of permissions for all authenticated users
 p, role:authenticated, clusters, get, *, allow
+
+# New home policy for admin
+p, role:home-admin, applications, get, */*, allow
+
+g, wim.vandenwyngaert@gmail.com, role:home-admin
