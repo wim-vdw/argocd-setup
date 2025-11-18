@@ -1,28 +1,28 @@
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: argocd-server-http-ingress
-  annotations:
-    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
-    nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
-    cert-manager.io/issuer: "letsencrypt-prod"
-spec:
-  ingressClassName: nginx
-  rules:
-  - http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: argocd-server
-            port:
-              name: http
-    host: argocd-vdww.duckdns.org
-  tls:
-  - hosts:
-    - argocd-vdww.duckdns.org
-    secretName: argocd-vdww-tls-secret
+#apiVersion: networking.k8s.io/v1
+#kind: Ingress
+#metadata:
+#  name: argocd-server-http-ingress
+#  annotations:
+#    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+#    nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
+#    cert-manager.io/issuer: "letsencrypt-prod"
+#spec:
+#  ingressClassName: nginx
+#  rules:
+#  - http:
+#      paths:
+#      - path: /
+#        pathType: Prefix
+#        backend:
+#          service:
+#            name: argocd-server
+#            port:
+#              name: http
+#    host: argocd-vdww.duckdns.org
+#  tls:
+#  - hosts:
+#    - argocd-vdww.duckdns.org
+#    secretName: argocd-vdww-tls-secret
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
