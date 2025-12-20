@@ -17,3 +17,13 @@ patches:
     - op: add
       path: /spec/sourceNamespaces
       value: ["core-apps"]
+    - op: add
+      path: /spec/roles
+      value:
+      - name: read-only
+        description: Read-only role for core applications
+        policies:
+        - p, proj:tests:read-only, logs, get, tests/*, allow
+        - p, proj:tests:read-only, applications, get, tests/*, allow
+        groups:
+        - wim.vandenwyngaert@gmail.com
