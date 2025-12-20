@@ -21,9 +21,9 @@ patches:
       path: /spec/roles
       value:
       - name: read-only
-        description: Read-only role for core applications
+        description: Read-only role for Redis application
         policies:
-        - p, proj:tests:read-only, logs, get, tests/*, allow
-        - p, proj:tests:read-only, applications, get, tests/*, allow
+        - p, proj:tests:read-only, logs, get, core-apps/redi, allow
+        - p, proj:tests:read-only, applications, get, core-apps/redis, allow
         groups:
         - wim.vandenwyngaert@gmail.com
