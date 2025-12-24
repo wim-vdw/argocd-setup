@@ -6,9 +6,4 @@ metadata:
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: simple-apps
----
-apiVersion: v1
-kind: Namespace
-metadata:
   name: test-apps

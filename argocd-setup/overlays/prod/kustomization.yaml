@@ -7,6 +7,7 @@ resources:
 - ../../base/argocd/overlays/prod
 - argocd-self-management.yaml
 - argocd-server-http-ingress.yaml
+- argocd-application-namespaces.yaml
 
 patches:
 - path: argocd-cm.patch.yaml
@@ -23,7 +24,7 @@ configMapGenerator:
   envs:
   - config/rbac.env
 
-#- namespaces.yaml
+#- argocd-application-namespaces.yaml
 #- argocd-application
 #- projects
 #
