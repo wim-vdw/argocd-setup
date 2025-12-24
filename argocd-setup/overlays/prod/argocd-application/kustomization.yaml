@@ -6,7 +6,7 @@ namespace: argocd
 resources:
 - https://raw.githubusercontent.com/argoproj/argo-cd/v3.2.2/manifests/install.yaml
 - ../argocd-self-management.yaml
-- argocd-server-http-ingress.yaml
+- ../argocd-server-http-ingress.yaml
 #- cert-manager-issuers.yaml
 
 patches:

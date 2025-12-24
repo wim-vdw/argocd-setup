@@ -6,6 +6,7 @@ resources:
 - ../../base/tailscale/overlays/prod
 - ../../base/argocd/overlays/prod
 - argocd-self-management.yaml
+- argocd-server-http-ingress.yaml
 
 patches:
 - path: argocd-cm.patch.yaml
