@@ -11,6 +11,18 @@ resources:
 patches:
 - path: argocd-cm.patch.yaml
 
+configMapGenerator:
+- name: argocd-cmd-params-cm
+  behavior: merge
+  envs:
+  - config/argocd-cmd-params-cm.env
+- name: argocd-rbac-cm
+  behavior: merge
+  files:
+  - config/policy.csv
+  envs:
+  - config/rbac.env
+
 #- namespaces.yaml
 #- argocd-application
 #- projects

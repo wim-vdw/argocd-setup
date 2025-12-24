@@ -16,10 +16,10 @@ configMapGenerator:
 - name: argocd-cmd-params-cm
   behavior: merge
   envs:
-  - config/argocd-cmd-params-cm.env
+  - ../config/argocd-cmd-params-cm.env
 - name: argocd-rbac-cm
   behavior: merge
   files:
-  - config/policy.csv
+  - ../config/policy.csv
   envs:
-  - config/rbac.env
+  - ../config/rbac.env
