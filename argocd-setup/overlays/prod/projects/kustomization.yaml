@@ -5,5 +5,4 @@ namespace: argocd
 
 resources:
 - overlays/core-apps
-- overlays/simple-apps
 - overlays/tests

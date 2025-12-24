@@ -8,6 +8,7 @@ resources:
 - argocd-self-management.yaml
 - argocd-server-http-ingress.yaml
 - argocd-application-namespaces.yaml
+- projects
 
 patches:
 - path: argocd-cm.patch.yaml
