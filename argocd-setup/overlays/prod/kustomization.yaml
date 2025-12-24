@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
 - ../../base/sealed-secrets/overlays/prod
 - ../../base/tailscale/overlays/prod
+- ../../base/argocd/overlays/prod
 #- namespaces.yaml
 #- argocd-application
 #- projects
