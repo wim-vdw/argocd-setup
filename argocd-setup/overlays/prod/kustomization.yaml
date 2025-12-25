@@ -8,6 +8,7 @@ resources:
 - argocd-self-management.yaml
 - argocd-server-http-ingress.yaml
 - argocd-application-namespaces.yaml
+- sealedsecret.yaml
 - projects
 
 patches:
