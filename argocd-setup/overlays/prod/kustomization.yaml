@@ -26,32 +26,6 @@ configMapGenerator:
   envs:
   - config/rbac.env
 
-replacements:
-- source:
-    kind: Secret
-    name: google-oidc
-    fieldPath: data.clientID
-  targets:
-  - select:
-      kind: ConfigMap
-      name: argocd-cm
-    fieldPaths:
-    - data.dex.config
-    options:
-      delimiter: $(GOOGLE_CLIENT_ID)
-- source:
-    kind: Secret
-    name: google-oidc
-    fieldPath: data.clientSecret
-  targets:
-  - select:
-      kind: ConfigMap
-      name: argocd-cm
-    fieldPaths:
-    - data.dex.config
-    options:
-      delimiter: $(GOOGLE_CLIENT_SECRET)
-
 #- argocd-application-namespaces.yaml
 #- argocd-application
 #- projects
