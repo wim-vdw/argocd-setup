@@ -6,6 +6,15 @@ data:
   kustomize.buildOptions: "--enable-helm"
   statusbadge.enabled: "true"
   url: "https://argocd-raspberrypi.tail858f03.ts.net"
+  dex.config: |
+    connectors:
+    - config:
+        issuer: https://accounts.google.com
+        clientID: $(GOOGLE_CLIENT_ID)
+        clientSecret: $(GOOGLE_CLIENT_SECRET)
+      type: oidc
+      id: google
+      name: Google
   resource.exclusions: |
     - apiGroups:
         - batch
