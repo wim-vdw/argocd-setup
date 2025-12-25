@@ -10,8 +10,8 @@ data:
     connectors:
     - config:
         issuer: https://accounts.google.com
-        clientID: $(GOOGLE_CLIENT_ID)
-        clientSecret: $(GOOGLE_CLIENT_SECRET)
+        clientID: $google-oidc:clientID
+        clientSecret: $google-oidc:clientSecret
       type: oidc
       id: google
       name: Google
