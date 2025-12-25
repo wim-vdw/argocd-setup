@@ -5,6 +5,7 @@ metadata:
 data:
   kustomize.buildOptions: "--enable-helm"
   statusbadge.enabled: "true"
+  url: "https://argocd-raspberrypi.tail858f03.ts.net"
   resource.exclusions: |
     - apiGroups:
         - batch
