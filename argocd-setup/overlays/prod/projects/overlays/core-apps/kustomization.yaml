@@ -25,7 +25,7 @@ patches:
         policies:
         - p, proj:core-apps:read-only, logs, get, core-apps/redis, allow
         - p, proj:core-apps:read-only, logs, get, core-apps/core-apps/redis, allow
-        - p, proj:core-apps:read-only, exec, create, core-apps/core-apps, allow
+        - p, proj:core-apps:read-only, exec, create, core-apps/redis, allow
         - p, proj:core-apps:read-only, exec, create, core-apps/core-apps/redis, allow
         - p, proj:core-apps:read-only, applications, get, core-apps/core-apps/redis, allow
         groups:
