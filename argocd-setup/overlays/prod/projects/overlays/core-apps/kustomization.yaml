@@ -23,7 +23,7 @@ patches:
       - name: read-only
         description: Read-only role for Redis application
         policies:
-        - p, proj:core-apps:read-only, logs, get, core-apps/redis/redis, allow
-        - p, proj:core-apps:read-only, applications, get, core-apps/redis/redis, allow
+        - p, proj:core-apps:read-only, logs, get, core-apps/core-apps/*, allow
+        - p, proj:core-apps:read-only, applications, get, core-apps/core-apps/redis, allow
         groups:
         - wim.vandenwyngaert@gmail.com
