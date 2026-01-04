@@ -16,7 +16,8 @@ To ensure separation of concerns three repositories are used to manage the Argo 
 Apply the production overlay (everything will be deployed in the `argocd` namespace):
 
 ```bash
-kubectl apply -k argocd-setup/overlays/prod
+cd manifests/overlays/prod
+kustomize build . --enable-helm | kubectl apply -f - 
 ```
 
 This setup ensures that Argo CD is installed and configured to manage its own resources within the cluster.
