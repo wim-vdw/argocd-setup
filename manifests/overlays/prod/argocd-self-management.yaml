@@ -14,7 +14,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/wim-vdw/argocd-setup.git
-    path: argocd-setup/overlays/prod
+    path: manifests/overlays/prod
     targetRevision: main
   syncPolicy:
     automated:
