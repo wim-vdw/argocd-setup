@@ -6,8 +6,8 @@ resources:
 - ../../base/tailscale/overlays/prod
 - ../../base/argocd/overlays/prod
 - argocd-self-management.yaml
-- argocd-server-http-ingress.yaml
 - argocd-application-namespaces.yaml
+- ingress.yaml
 - sealedsecret.yaml
 - projects
 
