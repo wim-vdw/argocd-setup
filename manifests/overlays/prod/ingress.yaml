@@ -4,7 +4,7 @@ metadata:
   name: argocd-raspberrypi-tailscale
   namespace: argocd
   annotations:
-    tailscale.com/funnel: "true"
+    tailscale.com/funnel: "false"
 spec:
   ingressClassName: tailscale
   rules:
